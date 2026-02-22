@@ -1,5 +1,6 @@
 --- 
-layout: post title: "Mi primer post" 
+layout: post 
+title: "Mi primer post" 
 date: 2026-02-21 
 categories: blog 
 --- 
