@@ -1,6 +1,7 @@
---- 
-layout: home 
-title: Bienvenido 
---- # 
+---
+layout: home
+title: Engineering Notes
+---
 
-Hola 👋 Este es mi blog en **GitHub Pages**.
+Welcome.  
+This site documents technical learnings, debugging sessions, architectural decisions, and engineering trade-offs encountered in real-world work.
