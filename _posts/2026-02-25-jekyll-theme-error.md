@@ -2,6 +2,9 @@
 layout: post
 title: "Jekyll Architect Theme Missing Dependency Error"
 date: 2026-02-21
+author: Sony Gallegos
+description: Root cause analysis of a missing theme dependency when running Jekyll locally.
+image: /assets/images/jekyll.png
 categories: jekyll debugging
 tags: jekyll github-pages ruby windows
 ---
