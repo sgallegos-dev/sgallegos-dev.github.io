@@ -1,3 +1,16 @@
 title: Sony Gallegos 
-description: Engineering Notes, Debug Logs && Technical Learnings 
-author: Sony Gallegos
+email: sony.gallegos@gmail.com
+description: > 
+  Engineering Notes, Debug Logs && Technical Learnings 
+baseurl: ""
+url: "https://sgallegos-dev.github.io"
+theme: minima
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+header_pages:
+  - about.md
+  - knowledge.md
