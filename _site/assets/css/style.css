@@ -223,7 +223,10 @@ hr { border-color: var(--border-color); }
 
 html[data-theme="dark"] { background-color: var(--bg-color); }
 
-html[data-theme="dark"] body { background-color: var(--bg-color); color: var(--text-color); }
+/*
+html[data-theme="dark"] body { background-color: var(--bg-color); color: var(--text-color);
+}*/
+html[data-theme="dark"] body { background: black !important; color: white !important; }
 
 html[data-theme="dark"] .site-header, html[data-theme="dark"] .site-footer { background-color: var(--bg-color); border-color: var(--border-color); }
 
