@@ -31,3 +31,6 @@ plugins:
 header_pages:
   - about.md
   - knowledge.md
+
+sass:
+  sass_dir: _sass
