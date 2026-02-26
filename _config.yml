@@ -1,5 +1,25 @@
 title: Sony Gallegos 
-email: sony.gallegos@gmail.com
+author:
+  name: Sony Gallegos
+  github: sonygallegos
+  url: "https://sgallegos-dev.github.io"
+  email: sony.gallegos@gmail.com
+
+twitter_username: sonygallegos
+github_username: sonygallegos
+linkedin_username: sonygallegos
+
+social_links:
+  - name: Twitter
+    url: "https://twitter.com/sonygallegos"
+  - name: GitHub
+    url: "https://github.com/sonygallegos"
+  - name: LinkedIn
+    url: "https://www.linkedin.com/in/sonygallegos/"
+  - name: Email
+    url: "mailto:sony.gallegos@gmail.com"
+
+
 description: > 
   Engineering Notes, Debug Logs && Technical Learnings 
 baseurl: ""
