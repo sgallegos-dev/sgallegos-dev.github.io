@@ -61,31 +61,12 @@ h1, h2, h3 {
   letter-spacing: -0.4px;
 }
 
-pre {
-  background: #0f172a;
-  color: #e2e8f0;
-  padding: 1.2rem;
-  border-radius: 10px;
-  font-size: 14px;
-  overflow-x: auto;
-}
-
-code {
-  background: #f1f5f9;
-  padding: 3px 6px;
-  border-radius: 4px;
-}
-
 a {
   color: #2563eb;
 }
 
 a:hover {
   opacity: 0.8;
-}
-
-h1, h2, h3 {
-  font-weight: 600;
 }
 
 pre {
@@ -105,4 +86,27 @@ code {
 
 hr {
   border-color: var(--border-color);
+}
+
+html[data-theme="dark"] {
+  background-color: var(--bg-color);
+}
+
+html[data-theme="dark"] body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+html[data-theme="dark"] .site-header,
+html[data-theme="dark"] .site-footer {
+  background-color: var(--bg-color);
+  border-color: var(--border-color);
+}
+
+html[data-theme="dark"] .post-meta {
+  color: var(--muted-color);
+}
+
+html[data-theme="dark"] a {
+  color: #60a5fa;
 }
