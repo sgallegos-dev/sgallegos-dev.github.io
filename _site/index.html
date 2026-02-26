@@ -82,21 +82,25 @@ This site documents technical learnings, debugging sessions, architectural decis
 
 </footer>
 <script>
-      const toggle = document.getElementById("theme-toggle");
-      const root = document.documentElement;
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("theme-toggle");
+  const root = document.documentElement;
 
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme) {
-        root.setAttribute("data-theme", savedTheme);
-      }
+  if (!toggle) return;
 
-      toggle.addEventListener("click", () => {
-        const current = root.getAttribute("data-theme");
-        const newTheme = current === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", newTheme);
-        localStorage.setItem("theme", newTheme);
-      });
-    </script>
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    root.setAttribute("data-theme", savedTheme);
+  }
+
+  toggle.addEventListener("click", function () {
+    const current = root.getAttribute("data-theme");
+    const newTheme = current === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+  });
+});
+</script>
   </body>
 
 </html>
