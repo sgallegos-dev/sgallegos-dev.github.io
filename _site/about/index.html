@@ -23,7 +23,10 @@
 
 
   <link rel="stylesheet" href="/assets/main.css">
-</head><body><header class="site-header" role="banner">
+</head><body>
+    <button id="theme-toggle" style="position:fixed;top:20px;right:20px;z-index:999;">
+      🌓
+    </button><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Sony Gallegos</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -94,6 +97,22 @@
   </div>
 
 </footer>
-</body>
+<script>
+      const toggle = document.getElementById("theme-toggle");
+      const root = document.documentElement;
+
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        root.setAttribute("data-theme", savedTheme);
+      }
+
+      toggle.addEventListener("click", () => {
+        const current = root.getAttribute("data-theme");
+        const newTheme = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+      });
+    </script>
+  </body>
 
 </html>
