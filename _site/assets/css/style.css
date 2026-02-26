@@ -205,7 +205,7 @@ table td { border: 1px solid #e8e8e8; }
 
 #theme-toggle { background: var(--code-bg); color: var(--text-color); border: 1px solid var(--border-color); padding: 6px 10px; border-radius: 8px; cursor: pointer; }
 
-body { font-size: 17px; line-height: 1.75; color: #1a1a1a; background-color: var(--bg-color); color: var(--text-color); transition: background-color 0.25s ease, color 0.25s ease; }
+body { font-size: 17px; line-height: 1.75; /*color: #1a1a1a;*/ background-color: var(--bg-color); color: var(--text-color); transition: background-color 0.25s ease, color 0.25s ease; }
 
 .wrapper { max-width: 820px; }
 
