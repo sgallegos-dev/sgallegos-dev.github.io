@@ -4,7 +4,7 @@
   {%- include head.html -%}
 
   <body>
-    <button id="theme-toggle" style="position:fixed;top:20px;right:20px;z-index:999;">
+    <button id="theme-toggle" aria-label="Toggle dark mode">
       🌓
     </button>
     {%- include header.html -%}
@@ -17,26 +17,21 @@
 
     {%- include footer.html -%}
 
- <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.getElementById("theme-toggle");
-  const root = document.documentElement;
+    <script>
+      (function () {
+        var toggle = document.getElementById("theme-toggle");
+        var root = document.documentElement;
 
-  if (!toggle) return;
+        if (!toggle) return;
 
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme) {
-    root.setAttribute("data-theme", savedTheme);
-  }
-
-  toggle.addEventListener("click", function () {
-    const current = root.getAttribute("data-theme");
-    const newTheme = current === "dark" ? "light" : "dark";
-    root.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
-  });
-});
-</script>
+        toggle.addEventListener("click", function () {
+          var current = root.getAttribute("data-theme");
+          var newTheme = current === "dark" ? "light" : "dark";
+          root.setAttribute("data-theme", newTheme);
+          localStorage.setItem("theme", newTheme);
+        });
+      })();
+    </script>
   </body>
 
 </html>
