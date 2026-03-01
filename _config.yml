@@ -7,15 +7,12 @@ github_username: sonygallegos
 linkedin_username: sonygallegos
 
 social_links:
-  - name: Twitter
-    url: "https://twitter.com/sonygallegos"
   - name: GitHub
-    url: "https://github.com/sonygallegos"
+    url: "https://github.com/sgallegos-dev"
   - name: LinkedIn
-    url: "https://www.linkedin.com/in/sonygallegos/"
+    url: "https://www.linkedin.com/in/sony-gallegos/"
   - name: Email
     url: "mailto:sony.gallegos@gmail.com"
-
 
 description: > 
   Engineering Notes, Debug Logs && Technical Learnings 
