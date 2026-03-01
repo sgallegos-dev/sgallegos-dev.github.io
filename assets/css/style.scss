@@ -8,6 +8,11 @@ html, html[data-theme="light"] {
   background-color: #ffffff;
   color: #1f2328;
 
+  body {
+    background-color: #ffffff;
+    color: #1f2328;
+  }
+
   a {
     color: #0969da;
 
@@ -112,6 +117,11 @@ html, html[data-theme="light"] {
   background-color: #0d1117;
   color: #e6edf3;
 
+  body {
+    background-color: #0d1117;
+    color: #e6edf3;
+  }
+
   a {
     color: #58a6ff;
 
@@ -215,6 +225,9 @@ html, html[data-theme="light"] {
     th {
       background-color: #161b22;
     }
+    tr:nth-child(even) {
+      background-color: #161b22;
+    }
   }
 
   hr {
@@ -223,6 +236,10 @@ html, html[data-theme="light"] {
 
   .highlight {
     background-color: #161b22;
+  }
+
+  a:hover {
+    text-decoration-color: #58a6ff;
   }
 }
 
