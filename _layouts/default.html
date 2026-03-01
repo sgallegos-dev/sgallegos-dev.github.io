@@ -30,6 +30,13 @@
           root.setAttribute("data-theme", newTheme);
           localStorage.setItem("theme", newTheme);
         });
+
+        // Follow OS preference changes when user hasn't manually chosen
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
+          if (!localStorage.getItem("theme")) {
+            root.setAttribute("data-theme", e.matches ? "dark" : "light");
+          }
+        });
       })();
     </script>
   </body>
