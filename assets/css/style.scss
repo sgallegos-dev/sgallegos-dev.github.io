@@ -48,7 +48,11 @@
   .post-title,
   .post-link,
   .page-heading {
-    color: #e0e0e0;
+    color: #ffffff;
+  }
+
+  .post-link:hover {
+    color: #6cb4ee;
   }
 
   .post-meta {
@@ -56,8 +60,8 @@
   }
 
   .post-content {
-    h1, h2, h3, h4 {
-      color: #e0e0e0;
+    h1, h2, h3, h4, h5, h6 {
+      color: #ffffff;
     }
   }
 

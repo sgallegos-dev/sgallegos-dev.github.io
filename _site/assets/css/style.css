@@ -195,5 +195,30 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
-/* TEST */
-body { background: red !important; }
+/* Dark mode overrides */
+[data-theme="dark"] { background-color: #1a1a2e; color: #e0e0e0; }
+[data-theme="dark"] a { color: #6cb4ee; }
+[data-theme="dark"] a:visited { color: #9b8ec5; }
+[data-theme="dark"] a:hover { color: #8ecbff; }
+[data-theme="dark"] .site-header { background-color: #16213e; border-top-color: #6cb4ee; border-bottom-color: #2a2a4a; }
+[data-theme="dark"] .site-title, [data-theme="dark"] .site-title:visited { color: #e0e0e0; }
+[data-theme="dark"] .site-nav .page-link { color: #e0e0e0; }
+[data-theme="dark"] .site-footer { background-color: #16213e; border-top-color: #2a2a4a; }
+[data-theme="dark"] .footer-col-wrapper, [data-theme="dark"] .footer-col { color: #b0b0b0; }
+[data-theme="dark"] .post-title, [data-theme="dark"] .post-link, [data-theme="dark"] .page-heading { color: #e0e0e0; }
+[data-theme="dark"] .post-meta { color: #888; }
+[data-theme="dark"] .post-content h1, [data-theme="dark"] .post-content h2, [data-theme="dark"] .post-content h3, [data-theme="dark"] .post-content h4 { color: #e0e0e0; }
+[data-theme="dark"] code { background-color: #2a2a4a; border-color: #3a3a5a; color: #e0e0e0; }
+[data-theme="dark"] pre { background-color: #2a2a4a; border-color: #3a3a5a; }
+[data-theme="dark"] pre code { background-color: transparent; border: none; }
+[data-theme="dark"] blockquote { color: #999; border-left-color: #3a3a5a; }
+[data-theme="dark"] table th, [data-theme="dark"] table td { border-color: #3a3a5a; }
+[data-theme="dark"] table th { background-color: #2a2a4a; }
+[data-theme="dark"] hr { border-color: #3a3a5a; }
+
+/* Dark mode toggle button */
+#theme-toggle { position: fixed; top: 18px; right: 18px; z-index: 999; background: none; border: 1px solid #ccc; border-radius: 50%; width: 36px; height: 36px; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background-color 0.3s, border-color 0.3s; padding: 0; line-height: 1; }
+
+#theme-toggle:hover { background-color: rgba(128, 128, 128, 0.15); }
+
+[data-theme="dark"] #theme-toggle { border-color: #555; color: #e0e0e0; }

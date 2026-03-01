@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where gh:*)",
+      "Bash(bundle exec:*)",
+      "WebFetch(domain:sgallegos-dev.github.io)",
+      "WebFetch(domain:gallegos-dev.github.io)"
+    ]
+  }
+}

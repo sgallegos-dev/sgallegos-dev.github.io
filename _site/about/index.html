@@ -4,6 +4,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script>
+    (function () {
+      var saved = localStorage.getItem("theme");
+      if (saved) {
+        document.documentElement.setAttribute("data-theme", saved);
+      }
+    })();
+  </script>
+
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>About | Sony Gallegos</title>
 <meta name="generator" content="Jekyll v3.10.0" />
@@ -11,21 +20,25 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Engineering Notes, Debug Logs &amp;&amp; Technical Learnings" />
 <meta property="og:description" content="Engineering Notes, Debug Logs &amp;&amp; Technical Learnings" />
-<link rel="canonical" href="http://localhost:4000/about/" />
-<meta property="og:url" content="http://localhost:4000/about/" />
+<link rel="canonical" href="https://sgallegos-dev.github.io/about/" />
+<meta property="og:url" content="https://sgallegos-dev.github.io/about/" />
 <meta property="og:site_name" content="Sony Gallegos" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="About" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Engineering Notes, Debug Logs &amp;&amp; Technical Learnings","headline":"About","name":"Sony Gallegos","url":"http://localhost:4000/about/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Engineering Notes, Debug Logs &amp;&amp; Technical Learnings","headline":"About","name":"Sony Gallegos","url":"https://sgallegos-dev.github.io/about/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <!--<link rel="stylesheet" href="/assets/main.css">-->
-  <link rel="stylesheet" href="/assets/css/style.scss">
-</head><body>
-    <button id="theme-toggle" style="position:fixed;top:20px;right:20px;z-index:999;">
+  <title>About</title>
+  <meta name="description" content="Engineering Notes, Debug Logs && Technical Learnings 
+">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <button id="theme-toggle" aria-label="Toggle dark mode">
       🌓
     </button><header class="site-header" role="banner">
 
@@ -99,25 +112,20 @@
 
 </footer>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.getElementById("theme-toggle");
-  const root = document.documentElement;
+      (function () {
+        var toggle = document.getElementById("theme-toggle");
+        var root = document.documentElement;
 
-  if (!toggle) return;
+        if (!toggle) return;
 
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme) {
-    root.setAttribute("data-theme", savedTheme);
-  }
-
-  toggle.addEventListener("click", function () {
-    const current = root.getAttribute("data-theme");
-    const newTheme = current === "dark" ? "light" : "dark";
-    root.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
-  });
-});
-</script>
+        toggle.addEventListener("click", function () {
+          var current = root.getAttribute("data-theme");
+          var newTheme = current === "dark" ? "light" : "dark";
+          root.setAttribute("data-theme", newTheme);
+          localStorage.setItem("theme", newTheme);
+        });
+      })();
+    </script>
   </body>
 
 </html>
